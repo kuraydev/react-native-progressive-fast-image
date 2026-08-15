@@ -1,9 +1,9 @@
 {
-  "name": "@freakycoder/react-native-progressive-fast-image",
-  "version": "1.0.0",
+  "name": "@kuraydev/react-native-progressive-fast-image",
+  "version": "2.0.0",
   "description": "Customizable progressive image for React Native with FastImage",
   "main": "./build/dist/ProgressiveFastImage.js",
-  "repository": "git@github.com:WrathChaos/react-native-progressive-fast-image.git",
+  "repository": "git@github.com:kuraydev/react-native-progressive-fast-image.git",
   "author": "FreakyCoder <kurayogun@gmail.com>",
   "license": "MIT",
   "homepage": "https://www.freakycoder.com",
@@ -62,5 +62,23 @@
     "copy:package": "cpx '../package.json' '../build/dist/'",
     "husky:lint": "npx husky add .husky/pre-commit 'npm run lint'",
     "husky:prettier": "npx husky set .husky/pre-commit 'npm run prettier'"
-  }
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.64.0"
+  },
+  "types": "./build/dist/ProgressiveFastImage.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/dist/ProgressiveFastImage.d.ts",
+      "default": "./build/dist/ProgressiveFastImage.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "build",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ]
 }
